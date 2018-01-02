@@ -137,7 +137,9 @@ function displayCalendar(){
 </script> 
 </head> 
 <body>
-<nav>
+
+<body onload="displayCalendar()"> 
+ <nav>
       <a id="fitness" href="Fitness.html">Fitness</a>
       <a id="sleep" href="Sleep.html">Sleep</a>
       <a id="food" href="Food.html">Food</a>
@@ -145,8 +147,6 @@ function displayCalendar(){
       <a id="moods" href="moods.html">Moods</a>
       <a id="about" href="about.html">About Us</a>
       </nav>
-<body onload="displayCalendar()"> 
- 
 <div id="calendar"></div> 
 </body> 
 <style> 
