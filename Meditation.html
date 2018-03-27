@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <style>
     h1{
        
@@ -21,37 +21,45 @@
         position: relative;
         top: -45px;
  }
-      a{
-        padding: 25px;
-      }
-     
-      #Headspace:hover{
-        background-color: LightSkyBlue;
-        color: white;
-      }
-      #Calm:hover{
-        background-color: LightSkyBlue;
-        color: white;
-      }
-      #Happy:hover{
-        background-color: LightSkyBlue;
-        color: white;
-      }
-      #How:hover{
-        background-color:LightSkyBlue;
-        color: white;
-      }
-      #Stop:hover{
-        background-color: LightSkyBlue;
-        color: white;
-      }
-      #Mindful:hover{
-        background-color: LightSkyBlue;
-        color: white;
-      }
-    #More:hover{
-      background-color: LightSkyBlue;
-        color: white;
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
       
   </style>
 </head>
@@ -63,10 +71,26 @@
       <a id="Calm" href="https://www.calm.com/">Calm</a>
       <a id="How" href="http://how-to-meditate.org/">How To Meditate</a>
       <a id="Stop" href="https://www.stopbreathethink.com/">Stop, breath, and think</a>
-      <a id="Happy" href="https://www.happify.com/">Happify</a>
       <a id="Mindful" href="https://www.mindful.org/">Mindful</a>
       <a id="More"  href="https://www.yogiapproved.com/om/top-10-meditation-mindfulness-brain-health-websites-apps/">More websites</a>
       </nav>
+  <div class="dropdown">
+  <button class="dropbtn">Meditation websites</button>
+  <div class="dropdown-content">
+    <a href="#">"https://www.headspace.com/"</a>
+    <a href="#">"https://www.calm.com/"</a>
+    <a href="#">"http://how-to-meditate.org/"</a>
+    <a href="#">"https://www.stopbreathethink.com/"</a>
+    <a href="#"> "https://www.mindful.org/"</a>
+    <a href="https://www.yogiapproved.com/om/top-10-meditation-mindfulness-brain-health-websites-apps/"</a>
+  </div>
+</div>
+</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
 
 </body>
   
