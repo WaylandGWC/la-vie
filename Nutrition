@@ -8,10 +8,51 @@ font-size: 130px;
 text-align: center;
 font-family: Verdana;
 
+      #fitness:hover{
+        background-color: orange;
+        color: white;
+      }
+      #sleep:hover{
+        background-color: PowderBlue;
+        color: white;
+      }
+      #food:hover{
+        background-color: pink;
+        color: white;
+      }
+      #calendar:hover{
+        background-color:blue;
+        color: white;
+      }
+      #moods:hover{
+        background-color: purple;
+        color: white;
+      }
+      #about:hover{
+        background-color: green;
+        color: white;
+      }
+      
+            #specialNav{
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        top: -45px;
+      }
+
 </style>
 <body>
 
 <h1>Nutrition</h1>
+
+<nav id="specialNav">
+      <a id="fitness" href="Fitness.html" class="bar">Fitness</a>
+      <a id="sleep" href="Sleep.html" class="bar">Sleep</a>
+      <a id="food" href="index.html" class="bar">Home</a>
+      <a id="calendar" href="calendar.html" class="bar">Calendar</a>
+      <a id="moods" href="moods.html" class="bar">Moods</a>
+      <a id="about" href="about.html" class="bar">Environmental</a>
+      </nav>
 
 </body>
 
