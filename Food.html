@@ -215,6 +215,47 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+      
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
     </style>
   </head>
@@ -330,7 +371,13 @@
     <nav id="snackNav">
       <a href="http://www.geniuskitchen.com/recipe/apples-and-peanut-butter-apple-slices-218390">Apples and Peanut Butter</a>
       <a href="https://fit.webmd.com/jr/food/article/ants-on-a-log-recipe">Ants on a Log</a>
-      <a href="https://chocolatecoveredkatie.com/2016/09/15/healthy-granola-bars-recipe/">Granola Bars</a>
+      <div class="dropdown">
+        <button class="dropbtn">Granola Bars</button>
+        <div class="dropdown-content">
+          <a href="https://chocolatecoveredkatie.com/2016/09/15/healthy-granola-bars-recipe/">Chocolate Chip Bars</a>
+          <a href="https://chocolatechocolateandmore.com/peanut-butter-chocolate-chip-granola-bars/">Peanut Butter Chocolate Chip Bars</a>
+        </div>
+      </div>
       <a href="https://www.thehealthymaven.com/2015/08/how-to-build-a-healthy-trail-mix.html">Trail Mix</a>
     </nav>
     <nav id="snackpicsNav">
